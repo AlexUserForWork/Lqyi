@@ -179,6 +179,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        z-index: 10;
                      }
 
                      #messages {
@@ -216,6 +217,7 @@
                         background: url('./source/img/logo.png') no-repeat
                            center / cover;
                         margin-right: 10px;
+                        width: 40px;
                      }
 
                      .user-avatar {
@@ -328,7 +330,7 @@
                         scrollToBottom();
 
                         try {
-                           const backendUrl = 'http://localhost:4000/chat';
+                           const backendUrl = 'https://aichat-backend-79ip.onrender.com/chat';//'http://localhost:4000/chat';
                            const response = await fetch(backendUrl, {
                               method: 'POST',
                               headers: { 'Content-Type': 'application/json' },
