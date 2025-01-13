@@ -27,7 +27,8 @@ body {
 .page_wrapper {
    position: relative;
    overflow: hidden;
-   margin-top: -2.8rem;
+   top: 0;
+   /* margin-top: -2.8rem; */
    height: -webkit-fit-content;
    height: -moz-fit-content;
    height: fit-content;
@@ -213,7 +214,7 @@ select {
 
 header {
    width: 100%;
-   position: sticky;
+   position: fixed;
    top: 1rem;
    z-index: 100;
 }
@@ -546,6 +547,7 @@ header.active {
    gap: 2rem;
 }
 .sn_hero_content h1 {
+  margin-top: 50px;
    text-shadow: 0rem -0.1875rem 0rem #000, -0.1875rem 0rem 0rem #000,
       0.1875rem 0rem 0rem #000, 0rem 0.1875rem 0rem #000,
       -0.125rem 0.125rem 0rem #000, -0.125rem -0.125rem 0rem #000,
