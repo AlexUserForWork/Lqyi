@@ -188,6 +188,25 @@
                         overflow-y: auto;
                      }
 
+                     #messages::-webkit-scrollbar {
+                        width: 10px;
+                     }
+
+                     #messages::-webkit-scrollbar-track {
+                        background: #57b7ff;
+                        border-radius: 10px;
+                     }
+
+                     #messages::-webkit-scrollbar-thumb {
+                        background: #2369aa; /* Цвет ползунка */
+                        border-radius: 10px;
+                        border: 2px solid #57b7ff;
+                     }
+
+                     #messages::-webkit-scrollbar-thumb:hover {
+                        background: #1c5a90; /* Затемнение при наведении */
+                     }
+
                      .message {
                         display: flex;
                         align-items: center;
