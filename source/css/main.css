@@ -547,7 +547,7 @@ header.active {
    gap: 2rem;
 }
 .sn_hero_content h1 {
-  margin-top: 50px;
+   margin-top: 50px;
    text-shadow: 0rem -0.1875rem 0rem #000, -0.1875rem 0rem 0rem #000,
       0.1875rem 0rem 0rem #000, 0rem 0.1875rem 0rem #000,
       -0.125rem 0.125rem 0rem #000, -0.125rem -0.125rem 0rem #000,
@@ -1774,4 +1774,10 @@ footer .footer_bloop {
    font-style: normal;
    font-weight: 400;
    line-height: 1rem;
+}
+
+@media (max-width: 1100px) {
+   .sn_about_content::after {
+      display: none;
+   }
 }

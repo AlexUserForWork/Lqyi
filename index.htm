@@ -169,8 +169,8 @@
 
                   <style>
                      #chat-container {
-                        width: 600px;
-                        height: 350px;
+                        width: 800px;
+                        height: 450px;
                         background: linear-gradient(to top, #2369aa, #57b7ff);
                         border-radius: 15px;
                         padding: 10px;
@@ -277,6 +277,20 @@
                      #send-btn:hover {
                         opacity: 0.8;
                      }
+
+                     @media (max-width: 1400px) {
+                        #chat-container {
+                           width: 600px;
+                           height: 350px;
+                        }
+                     }
+
+                     @media (max-width: 1100px) {
+                        #chat-container {
+                           width: 100%;
+                           height: 500px;
+                        }
+                     }
                   </style>
 
                   <script>
@@ -330,7 +344,8 @@
                         scrollToBottom();
 
                         try {
-                           const backendUrl = 'https://aichat-backend-79ip.onrender.com/chat';//'http://localhost:4000/chat';
+                           const backendUrl =
+                              'https://aichat-backend-79ip.onrender.com/chat'; //'http://localhost:4000/chat';
                            const response = await fetch(backendUrl, {
                               method: 'POST',
                               headers: { 'Content-Type': 'application/json' },

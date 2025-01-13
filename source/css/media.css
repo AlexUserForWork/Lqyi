@@ -221,7 +221,8 @@
       background: #58ABFF;
     }
     .sn_about_content {
-      padding: 2rem 2rem 26rem 2rem;
+      /* padding: 2rem 2rem 26rem 2rem; */
+      padding: 50px;
       gap: 2rem;
       border-radius: 1.4rem;
     }
