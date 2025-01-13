@@ -151,7 +151,7 @@
                         <div class="message bot">
                            <div class="avatar bot-avatar"></div>
                            <div class="text bot-text">
-                              Привет! Чем могу помочь?
+                              Hello! How can I help?
                            </div>
                         </div>
                      </div>
@@ -159,7 +159,7 @@
                         <input
                            type="text"
                            id="user-input"
-                           placeholder="Введите сообщение"
+                           placeholder="Enter your message"
                         />
                         <button id="send-btn" onclick="sendMessage()">
                            Send
@@ -353,8 +353,7 @@
 
                            const botText = document.createElement('div');
                            botText.className = 'text bot-text';
-                           botText.textContent =
-                              data.reply || 'No answer';
+                           botText.textContent = data.reply || 'No answer';
 
                            botMessage.appendChild(botAvatar);
                            botMessage.appendChild(botText);
