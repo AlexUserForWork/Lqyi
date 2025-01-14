@@ -27,6 +27,13 @@
          href="source/img/favicon-16x16.png"
       />
       <link rel="manifest" href="source/img/site.webmanifest" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Geist+Mono:wght@100..900&family=Gloria+Hallelujah&family=Indie+Flower&family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+         rel="stylesheet"
+      />
    </head>
 
    <body>
@@ -130,6 +137,20 @@
                   <div class="header">
                      <img src="source/img/logo.png" alt="" class="avatar" />
                      <div class="social_link_items">
+                        <a
+                           href="https://t.me"
+                           target="_blank"
+                           class="social_link"
+                        >
+                           <img src="source/img/tg_social_icon.svg" alt="" />
+                        </a>
+                        <a
+                           href="https://x.com"
+                           target="_blank"
+                           class="social_link"
+                        >
+                           <img src="source/img/x_social_icon.svg" alt="" />
+                        </a>
                         <a
                            href="https://dexscreener.com"
                            target="_blank"
@@ -239,7 +260,7 @@
                         border-radius: 50%;
                         width: 40px;
                         color: white;
-                        border: 2px solid white; 
+                        border: 2px solid white;
                      }
 
                      .user-avatar {
@@ -316,6 +337,14 @@
                   </style>
 
                   <script>
+                     document
+                        .getElementById('user-input')
+                        .addEventListener('keypress', function (event) {
+                           if (event.key === 'Enter') {
+                              sendMessage();
+                           }
+                        });
+
                      let chatHistory =
                         JSON.parse(sessionStorage.getItem('chatHistory')) || [];
 
